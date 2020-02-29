@@ -573,8 +573,17 @@ button:hover {
 .social-media-container {
   margin-top: 28px;
   padding-bottom: 67px;
+  position: relative;
 }
 
 .social-media-icon {
   margin-right: 8px;
+  transition: all 1s;
+  
+}
+
+.social-media-icon:hover {
+  position: relative;
+  bottom: 3px;
+  cursor: pointer;
 }
