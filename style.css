@@ -447,7 +447,7 @@ textarea {
 
 html {
   width: 1020px;
-  height: 1195px;
+  height: 1633px;
 }
 
 body {
@@ -455,153 +455,126 @@ body {
   font-family: "Lato";
 }
 
-header {
-  position: relative;
-  height: 89px;
-  color: white;
-  box-shadow: 0px 6px 0px 0px rgba(50, 55, 70, 1);
+.portfolio {
   background-color: #2d303a;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 10;
-}
-.dot {
-  color: rgb(58,62,77);
-}
-.logo {
-  font-size: 18.03448pt;
-  margin-left: 40px;
-  display: flex;
+  color: #666d89;
+  height: 870px;
+  box-shadow: 0px 6px 0px 0px rgba(50, 55, 70, 1);
 }
 
 h1 {
-  transition: color 0.2s ease;
-}
-
-h1:hover {
-  color: #f06c64;
-  cursor: pointer;
-}
-
-.red {
-  color: #f06c64;
-}
-
-.header__nav {
-  display: flex;
-  width: 371px;
-  text-transform: uppercase;
-  font-size: 8.65655pt;
-  align-items: center;
-  justify-content: space-between;
-  margin-right: 40px;
-}
-
-.nav__item {
-  display: flex;
-  transition: color 0.2s ease;
-}
-
-.nav__item:hover {
-  cursor: pointer;
-  color: #f06c64;
-}
-
-.slider {
-  height: 600px;
-  position: relative;
-  z-index: 9;
-  box-shadow: 0px 6px 0px 0px rgba(234, 103, 107, 1);
-}
-
-.slider__slider-control-left:hover {
-  cursor: pointer;
-}
-.slider__slider-control-right:hover {
-  cursor: pointer;
-}
-.slider__slider-control-left {
-  position: absolute;
-  top: 287px;
-  left: 42px;
-}
-
-.slider__slider-control-right {
-  position: absolute;
-  top: 287px;
-  left: 964px;
-}
-
-.main__our-services {
-  z-index: 8;
-  box-shadow: 0px 6px 0px 0px rgb(255, 255, 255);
-  position: relative;
-  height: 500px;
-  background-color: #f2f2f2;
-  color: rgba(118, 126, 158, 255);
-}
-
-.main__our-services__header {
-  margin-left: 40px;
-  margin-right: 40px;
-}
-
-.main__our-services__header__head {
-  padding-top: 67px;
-  margin-bottom: 33px;
   font-size: 30px;
   line-height: 18px;
-  color: #666d89;
   font-family: "Lato";
   font-weight: 900;
+  padding-bottom: 33px;
 }
 
-.main__our-services__header__main-text {
+p {
   font-size: 18px;
-  line-height: 30px;
   color: #767e9e;
   font-family: "Lato";
   font-weight: 300;
 }
 
-.flex-table {
-  margin-top: 51px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.container {
+  width: 945px;
+  margin-left: 40px;
+  padding-top: 66px;
 }
 
-.card {
-  width: 300px;
-  padding-bottom: 37px;
-  display: flex;
-  justify-content: space-between;
+nav {
+  margin-top: 15px;
+  margin-bottom: 18px;
 }
 
-.card img {
-  width: 59px;
-  height: 59px;
-}
-
-.card__text-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 220px;
-}
-.card__head-text {
-  font-size: 18px;
-  line-height: 18px;
-  color: #666d89;
-  font-family: "Lato";
-  font-weight: 900;
-}
-
-.card__main-text {
+button {
+  background-color: #2d303a;
+  border: 1px solid #666d89;
+  border-radius: 5px;
+  margin-right: 10px;
   font-size: 12px;
   line-height: 22px;
   color: #767e9e;
   font-family: "Lato";
   font-weight: 400;
+  transition: color 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+}
+
+button:hover {
+  color: #dedede;
+  border: 1px solid #dedede;
+}
+
+.portfolio__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio__cards img {
+  margin-bottom: 17px;
+}
+
+.about-us {
+  background-color: #f2f2f2;
+  margin-top: 6px;
+  box-shadow: 0px 6px 0px 0px rgba(255, 255, 255, 1);
+}
+
+.head-text {
+  font-size: 30px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  padding-bottom: 33px;
+}
+
+.about-us__cards {
+  margin-top: 49px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name {
+  font-size: 18px;
+  line-height: 18px;
+  color: #666d89;
+  font-family: "Lato";
+  font-weight: 900;
+  margin-top: 17px;
+  height: 18px;
+}
+
+.about-us__card {
+  width: 302px;
+  margin-right: 17px;
+}
+
+.about-us__card:nth-of-type(3n) {
+  margin: 0;
+}
+
+.about-us__card__text {
+  font-size: 12px;
+  color: #767e9e;
+  font-family: "Lato";
+  font-weight: 400;
+  margin-top: 18px;
+  line-height: 22px;
+}
+
+.main-text {
+  line-height: 30px;
+}
+
+.social-media-container {
+  margin-top: 28px;
+  padding-bottom: 67px;
+}
+
+.social-media-icon {
+  margin-right: 8px;
 }
