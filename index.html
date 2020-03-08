@@ -5,99 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <h1>SINGOLO</h1><span class="red">*</span>
-        </div>
-        <nav class="header__nav">
-            <div class="nav__item">home</div>
-            <div class="dot">·</div>
-            <div class="nav__item">cervices</div>
-            <div class="dot">·</div>
-            <div class="nav__item">portfolio</div>
-            <div class="dot">·</div>
-            <div class="nav__item">about</div>
-            <div class="dot">·</div>
-            <div class="nav__item">contact</div>
-        </nav>
-    </header>
-    <main>
-        <div class="slider">
-            <div class="slider__slider-control-left">
-                <img src="./assets/chev@1X.png" alt="">
-            </div>
-            <div class="slider__slider-control-right">
-                <img src="./assets/chev@1X (1).png" alt="">
-            </div>
-            <img width="1020px" src="./assets/iPhone Horizontal (1).png" alt="" class="slider__slider-element">
-        </div>
-        <section class="main__our-services">
-            <div class="main__our-services__header">
-                <p class="main__our-services__header__head">Our Services</p>
-                <p class="main__our-services__header__main-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                    condimentum. Duis mollis, non commodo luctus,
-                    nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
-                    tortor mauris condimentum nibh.</p>
+    <div class="form">
+        <div class="container">
+            <p class="form_head-text">
+                Get a Quote
+            </p>
+            <p class="form_main-text">
+                Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus,
+                nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+                tortor mauris condimentum nibh.
+            </p>
+            <div class="form_input-container">
+                <div class="inputs">
+                    <input type="text" class="form_input" placeholder="Name (Required)">
+                    <input type="email" class="form_input" placeholder="Email (Required)">
+                    <input type="text" class="form_input" placeholder="Subject">
+                    <textarea type="text" class="form_input last-input"
+                        placeholder="Describe your project in detail..."></textarea>
 
-                <div class="flex-table">
-                    <div class="card">
-                        <img class="card__icon" src="./assets/pencil-icon.png" alt="">
-                        <div class="card__text-wrapper">
-                            <p class="card__head-text">Custom Design</p>
-                            <p class="card__main-text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
-                                laoreet, viverra lacus ut, ultrices velit.</p>
-                        </div>
+                    <button class="submit-button">Submit</button>
+                </div>
+                <div class="contact-information">
+                    <p class="contact-information_head-text">
+                        Contact Information
+                    </p>
+                    <p class="contact-information_main-text">
+                        Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.
+                        Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
+                        turpis, et consequat felis.
+                    </p>
+                    <div class="contact-information_info-wrapper">
+                        <img src="./assets/location@1X.png" alt="" class="info-icon">
+                        <p class="info-text">Elm St. 14/05 Lost City</p>
                     </div>
-                    <div class="card">
-                        <img class="card__icon" src="./assets/bulb.png" alt="">
-                        <div class="card__text-wrapper">
-                            <p class="card__head-text">Inovative Ideas</p>
-                            <p class="card__main-text">Quisque luctus, quam eget molestie commodo, lacus purus cursus
-                                purus, nec rutrum tellus dolor id lorem.</p>
-                        </div>
+                    <div class="contact-information_info-wrapper">
+                        <img src="./assets/location@1X.png" alt="" class="info-icon">
+                        <a href="tel:03528-331-86-35" class="info-text">03528 331 86 35</a>
                     </div>
-                    <div class="card">
-                        <img class="card__icon" src="./assets/heart.png" alt="">
-                        <div class="card__text-wrapper">
-                            <p class="card__head-text">Love Is The Answer</p>
-                            <p class="card__main-text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
-                                turpis, et consequat felis. Quisque condimentum.</p>
-                        </div>
+                    <div class="contact-information_info-wrapper">
+                        <img src="./assets/location@1X.png" alt="" class="info-icon">
+                        <a href="mailto:info@singolo.com" class="info-text">info@singolo.com</a>
                     </div>
-                    <div class="card">
-                        <img class="card__icon" src="./assets/phone.png" alt="">
-                        <div class="card__text-wrapper">
-                            <p class="card__head-text">Responsive Layout</p>
-                            <p class="card__main-text">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas
-                                blandit nunc ligula. Praesent elit leo.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card__icon" src="./assets/cloud.png" alt="">
-                        <div class="card__text-wrapper">
-                            <p class="card__head-text">24 / 7 Support</p>
-                            <p class="card__main-text">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla
-                                a sem erat. Pellentesque egestas venenatis lorem .</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img class="card__icon" src="./assets/star.png" alt="">
-                        <div class="card__text-wrapper">
-                            <p class="card__head-text">Feel Like A Star</p>
-                            <p class="card__main-text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
-                                Fusce vitae aliquam tellus.</p>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </div>
+    <footer>
+        <p class="footer_copyright">© Copyright 2013</p>
+        <div class="footer_icon-wrapper">
+            <img src="./assets/facebook.png" alt="" class="footer_icon">
+            <img src="./assets/google+.png" alt="" class="footer_icon">
+            <img src="./assets/twtr.png" alt="" class="footer_icon">
+            <img src="./assets/infooter.png" alt="" class="footer_icon">
+
+        </div>
+    </footer>
 </body>
 
 </html>
