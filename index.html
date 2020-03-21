@@ -15,28 +15,31 @@
             <h1>SINGOLO</h1><span class="red">*</span>
         </div>
         <nav class="header__nav">
-            <div class="nav__item">home</div>
+            <a href="#home" class="nav__item">home</a>
             <div class="dot">·</div>
-            <div class="nav__item">cervices</div>
+            <a href="#services" class="nav__item">services</a>
             <div class="dot">·</div>
-            <div class="nav__item">portfolio</div>
+            <a href="#portfolio" class="nav__item">portfolio</a>
             <div class="dot">·</div>
-            <div class="nav__item">about</div>
+            <a href="#about" class="nav__item">about</a>
             <div class="dot">·</div>
-            <div class="nav__item">contact</div>
+            <a href="#contact" class="nav__item">contact</a>
         </nav>
     </header>
-    <main>
-        <div class="slider">
-            <div class="slider__slider-control-left">
-                <img src="./assets/chev@1X.png" alt="">
+    <main id="home">
+        
+        <div class="carousel">
+            <div class="content">
+                <img src="./assets/iPhone Horizontal (1).png">
+                <img src="./assets/iPhone Horizontal (2).png" alt="">
             </div>
-            <div class="slider__slider-control-right">
-                <img src="./assets/chev@1X (1).png" alt="">
+            <div class="navigation">
+                <div class="previous"> <img  src="./assets/chev@1X.png" alt=""></div>
+                <div class="next"><img src="./assets/chev@1X (1).png" alt=""></div>
             </div>
-            <img width="1020px" src="./assets/iPhone Horizontal (1).png" alt="" class="slider__slider-element">
         </div>
-        <section class="main__our-services">
+        
+        <section id="services" class="main__our-services">
             <div class="main__our-services__header">
                 <p class="main__our-services__header__head">Our Services</p>
                 <p class="main__our-services__header__main-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris
@@ -98,33 +101,33 @@
             </div>
         </section>
     </main>
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="container">
-            <h1>Portfolio</h1>
+            <p class="head-text">Portfolio</p>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <nav class="portfolio__nav">
-                <button>All</button>
-                <button>Web Design</button>
-                <button>Graphic Design</button>
-                <button>Artwork</button>
+                <button class="portfolio__nav__button">All</button>
+                <button class="portfolio__nav__button">Web Design</button>
+                <button class="portfolio__nav__button">Graphic Design</button>
+                <button class="portfolio__nav__button">Artwork</button>
             </nav>
             <div class="portfolio__cards">
-                <img src="./assets/ship.png" alt="">
-                <img src="./assets/2.png" alt="">
-                <img src="./assets/3.png" alt="">
-                <img src="./assets/4.png" alt="">
-                <img src="./assets/5.png" alt="">
-                <img src="./assets/6.png" alt="">
-                <img src="./assets/7.png" alt="">
-                <img src="./assets/8.png" alt="">
-                <img src="./assets/9.png" alt="">
-                <img src="./assets/10.png" alt="">
-                <img src="./assets/11.png" alt="">
-                <img src="./assets/12.png" alt="">
+                <img class="portfolio__card" src="./assets/ship.png" alt="">
+                <img class="portfolio__card" src="./assets/2.png" alt="">
+                <img class="portfolio__card" src="./assets/3.png" alt="">
+                <img class="portfolio__card" src="./assets/4.png" alt="">
+                <img class="portfolio__card" src="./assets/5.png" alt="">
+                <img class="portfolio__card" src="./assets/6.png" alt="">
+                <img class="portfolio__card" src="./assets/7.png" alt="">
+                <img class="portfolio__card" src="./assets/8.png" alt="">
+                <img class="portfolio__card" src="./assets/9.png" alt="">
+                <img class="portfolio__card" src="./assets/10.png" alt="">
+                <img class="portfolio__card" src="./assets/11.png" alt="">
+                <img class="portfolio__card" src="./assets/12.png" alt="">
             </div>
         </div>
     </section>
-    <section class="about-us">
+    <section id="about" class="about-us">
         <div class="container">
             <p class="head-text">About Us</p>
             <p class="main-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi
@@ -170,7 +173,7 @@
             </div>
         </div>
     </section>
-    <div class="form">
+    <form id="contact" class="form">
         <div class="container">
             <p class="form_head-text">
                 Get a Quote
@@ -182,13 +185,13 @@
             </p>
             <div class="form_input-container">
                 <div class="inputs">
-                    <input type="text" class="form_input" placeholder="Name (Required)">
-                    <input type="email" class="form_input" placeholder="Email (Required)">
+                    <input type="text" class="form_input" placeholder="Name (Required)" required>
+                    <input type="email" class="form_input" placeholder="Email (Required)" required>
                     <input type="text" class="form_input" placeholder="Subject">
                     <textarea type="text" class="form_input last-input"
                         placeholder="Describe your project in detail..."></textarea>
 
-                    <button class="submit-button">Submit</button>
+                    <button type="submit" class="submit-button">Submit</button>
                 </div>
                 <div class="contact-information">
                     <p class="contact-information_head-text">
@@ -214,7 +217,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </form>
     <footer>
         <p class="footer_copyright">© Copyright 2013</p>
         <div class="footer_icon-wrapper">
@@ -225,6 +228,7 @@
 
         </div>
     </footer>
+    <script src="./index.js"></script>
 </body>
 
 </html>
