@@ -456,7 +456,8 @@ body {
 }
 
 header {
-  position: relative;
+  position: fixed;
+  width: 1020px;
   height: 89px;
   color: white;
   box-shadow: 0px 6px 0px 0px rgba(50, 55, 70, 1);
@@ -476,6 +477,7 @@ header {
 }
 
 h1 {
+  
   transition: color 0.2s ease;
 }
 
@@ -484,7 +486,15 @@ h1:hover {
   cursor: pointer;
 }
 
+a {
+  color: white;
+}
+
 .red {
+  color: #f06c64;
+}
+
+.focused-link {
   color: #f06c64;
 }
 
@@ -513,6 +523,41 @@ h1:hover {
   position: relative;
   z-index: 9;
   box-shadow: 0px 6px 0px 0px rgba(234, 103, 107, 1);
+}
+
+.carousel {
+  width: 1020px;
+  height: 600px;
+  overflow: hidden;
+  z-index: 9;
+  position: relative;
+  box-shadow: 0px 6px 0px 0px rgba(234, 103, 107, 1);
+}
+.carousel .content {
+  display: flex;
+  height: 100%;
+  transition: 500ms ease-in-out;
+}
+.carousel .content > * {
+  min-width: 100%;
+  object-fit: cover;
+}
+.carousel .navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel .navigation div {
+  cursor: pointer;
+  margin: 42px;
+  transition: 300ms;
+}
+
+main {
+  padding-top: 89px;
 }
 
 .slider__slider-control-left:hover {
@@ -612,6 +657,7 @@ html {
 
 body {
   width: 1020px;
+  height: 3528px;
   font-family: "Lato";
 }
 
@@ -622,8 +668,13 @@ body {
   box-shadow: 0px 6px 0px 0px rgba(50, 55, 70, 1);
 }
 
+.portfolio__active-card {
+  transition: all 0.3s;
+  outline: 5px solid #f06c64;
+}
+
 h1 {
-  font-size: 30px;
+  font-size: 24px;
 
   font-family: "Lato";
   font-weight: 900;
@@ -647,7 +698,7 @@ nav {
   margin-bottom: 18px;
 }
 
-button {
+.portfolio__nav__button {
   background-color: #2d303a;
   border: 1px solid #666d89;
   border-radius: 5px;
@@ -661,8 +712,13 @@ button {
   transition: border 0.2s ease-in-out;
 }
 
-button:hover {
+.portfolio__nav__button:hover {
   color: #dedede;
+  border: 1px solid #dedede;
+}
+
+.portfolio__nav__button-active {
+  color: red;
   border: 1px solid #dedede;
 }
 
@@ -876,10 +932,10 @@ footer {
   margin-right: 20px;
 }
 
-/* .submit-button {
-  height: 40px;
+.submit-button {
+  height: 25px;
   border-radius: 5px;
   border: none;
   color: white;
   background-color: #d6564f;
-} */
+}
