@@ -62,7 +62,7 @@ const PortfolioNavButtons = document.querySelectorAll(".portfolio__nav__button")
 for (let button of PortfolioNavButtons) {
     button.addEventListener('click', function (e) {
         for (let card = 0; card < PortfolioCards.length; card++) {
-            console.log(card)
+            
             PortfolioCards[card].style.order = card + Math.floor(Math.random() * Math.floor(9));
 
         }
@@ -76,24 +76,12 @@ for (let button of PortfolioNavButtons) {
 const submitButton = document.querySelector('.submit-button')
 submitButton.addEventListener('onsubmit', function (event) {
     event.preventDefault();
-    alert('smth');
+    
 
 
 })
 
-// function onfoc(e) {
-//     headerNav.style.display = headerNav.style.display === 'none' ? 'flex': 'none';
 
-//     headerNav.style.display = 'flex';
-//     headerNav.style.height = '100vh';
-//     headerNav.style.position = 'absolute';
-//     headerNav.style.top = '80px';
-//     headerNav.style.background = 'red'
-//     headerNav.style['flex-direction'] = 'column';
-//     headerNav.style['justify-content'] = 'center';
-//     // headerNav.style.transform = `translateX(${1 * 100}%)`;
-
-// }
 
 let burgerMenu = document.querySelector('.burger-menu');
 let headerNav = document.querySelector('.header__nav');
@@ -116,7 +104,7 @@ burgerMenu.addEventListener('click', function (e) {
 })
 
 headerNav.addEventListener('click', function (e) {
-    console.log(document.documentElement.clientWidth)
+
     if (document.documentElement.clientWidth < 700) {headerNav.style.display = 'none';}
     
 })
